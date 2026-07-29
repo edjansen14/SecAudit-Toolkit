@@ -29,7 +29,7 @@ $AuditResults["firewall_status"] = $FirewallStatus
 # ---------------------------------------------------------
 Write-Host "Analisando compartilhamentos de rede abertos..."
 # Filtra compartilhamentos ocultos padrão do sistema (que terminam com $)
-$Shares = Get-SmbShare | Where-Object { $_.Name -notmatch "\$$" }
+$Shares = Get-SmbShare | Where-Object { -not $_.Name.EndsWith('$') }
 
 $ShareList = @()
 if ($Shares.Count -gt 0) {

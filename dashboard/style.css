@@ -1,0 +1,46 @@
+/* Reset básico e tema escuro */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+h1 { color: #ffffff; margin-bottom: 5px;}
+h2 { color: #00bcd4; border-left: 4px solid #00bcd4; padding-left: 10px;}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    border-top: 4px solid #555; /* Cor padrão (cinza) */
+}
+
+.card h3 { margin-top: 0; }
+.card ul { padding-left: 20px; }
+.card li { margin-bottom: 8px; }
+
+/* Cores dinâmicas que o JavaScript vai aplicar */
+.status-seguro { border-top-color: #4CAF50; }
+.status-vulneravel { border-top-color: #F44336; }
+.status-atencao { border-top-color: #FFC107; }
+
+.text-green { color: #4CAF50; font-weight: bold; }
+.text-red { color: #F44336; font-weight: bold; }

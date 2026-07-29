@@ -1,0 +1,9 @@
+﻿{
+    "firewall_status":  {
+                            "Private":  "Seguro",
+                            "Domain":  "Seguro",
+                            "Public":  "Seguro"
+                        },
+    "compartilhamentos_abertos":  "Nenhum",
+    "risco_compartilhamento":  "Seguro"
+}
